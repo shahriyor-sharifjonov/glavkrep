@@ -1,0 +1,91 @@
+.offer{
+    padding: 60px 0;
+    @include media(576){
+        padding: 50px 0;
+    }
+    &__body{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        @include media(1200){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        background: #F7F7F7;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 577px;
+        &-img{
+            line-height: 0;
+            @include media(576){
+                max-width: 225px;
+                width: 100%;
+            }
+            @include media(485){
+                max-width: 160px;
+            }
+            @include media(380){
+                max-width: 110px;
+            }
+            img{
+                @include media(576){
+                    max-width: 100%;
+                }
+            }
+        }
+        &-content{
+            padding: 0 70px;
+            @include media(1400){
+                padding: 0 20px;
+            }
+            @include media(576){
+                padding: 0 10px;
+            }
+        }
+        &-title{
+            font-weight: 550;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.035em;
+            margin-bottom: 30px;
+            color: #000000;
+            a,
+            span{
+                color: #F24843;
+            }
+            @include media(576){
+                margin-bottom: 20px;
+                font-size: 14px;
+                line-height: 14px;
+                color: #000000;
+            }
+            @include media(485){
+                margin-bottom: 10px;
+            }
+        }
+        &-btn{
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.035em;
+            color: #000000;
+            border: 1px solid #F34743;
+            padding: 17px 30px;
+            transition: 300ms ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            @include media(576){
+                padding: 13px 20px;
+                font-size: 14px;
+                line-height: 14px
+            }
+            &:hover{
+                color: #fff;
+                background: #F24843;
+            }
+        }
+    }
+}
