@@ -1,3 +1,21 @@
+mixin fastener-item-1()
+    a(href="#!").fastener-catalog__item
+        .fastener-catalog__item-img
+            img(src="@img/fastener-1.png", alt="" draggable="false")
+        div 
+            p.fastener-catalog__item-title Анкеры
+            p.fastener-catalog__item-p 3500 + товаров
+
+
+mixin fastener-item-2()
+    a(href="#!").fastener-catalog__item
+        .fastener-catalog__item-img
+            img(src="@img/fastener-2.png", alt="" draggable="false")
+        div 
+            p.fastener-catalog__item-title Дюбеля / Дюбель гвозди   
+            p.fastener-catalog__item-p 3500 + товаров
+
+
 doctype html
 html(lang="en")
     head
@@ -12,7 +30,35 @@ html(lang="en")
             +header 
             main.main 
                 .container 
-                    p main
+                    h1.title Каталог крепежа
+                    .breadcrumbs 
+                        a(href="#!").breadcrumbs__link Главная 
+                        p.breadcrumbs__p | 
+                        a(href="#!").breadcrumbs__link ... 
+                    .fastener-catalog 
+                        .fastener-catalog__item.especially
+                            div
+                                a(href="#!").fastener-catalog__link Болты 
+                                a(href="#!").fastener-catalog__link Гайки 
+                                a(href="#!").fastener-catalog__link Шайбы 
+                                a(href="#!").fastener-catalog__link Винты 
+                                a(href="#!").fastener-catalog__link ... 
+                            a(href="#!").fastener-catalog__link Еще 200 подразделов
+                        +fastener-item-1
+                        +fastener-item-2
+                        +fastener-item-1
+                        +fastener-item-2
+                        +fastener-item-1
+                        +fastener-item-2
+                        +fastener-item-1
+                        +fastener-item-2
+                        +fastener-item-1
+                        +fastener-item-2
+                        +fastener-item-1
+                        +fastener-item-2
+                        +fastener-item-1
+                        +fastener-item-2
+                        +fastener-item-1
             include components/footer 
-            +footer
+            +footer 
         script(src="js/app.min.js") 

@@ -304,6 +304,7 @@
             visibility: hidden;
             transition: 300ms ease-out;
             z-index: 50;
+            box-shadow: 0 1px 5px #00000010;
             @include media(992){
                 padding: 32px 20px;
             }

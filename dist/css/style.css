@@ -380,6 +380,8 @@
   -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
   z-index: 50;
+  -webkit-box-shadow: 0 1px 5px #00000010;
+          box-shadow: 0 1px 5px #00000010;
 }
 
 .nav__katalog-content.open {
@@ -536,6 +538,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.footer {
+  margin-top: 60px;
 }
 
 .footer__top {
@@ -883,6 +889,141 @@ a {
   color: inherit;
 }
 
+.title {
+  font-weight: 550;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 0.035em;
+  color: #000000;
+}
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 3px;
+     -moz-column-gap: 3px;
+          column-gap: 3px;
+  margin-bottom: 25px;
+}
+
+.breadcrumbs.mb-0 {
+  margin-bottom: 0;
+}
+
+.breadcrumbs__link,
+.breadcrumbs__p {
+  font-weight: 550;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 0.035em;
+  color: #CACACA;
+}
+
+.fastener-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fastener-catalog__item {
+  width: calc(16.6666666667% - 8.4px);
+  height: 245px;
+  background: #F7F7F7;
+  padding: 15px 15px 25px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.fastener-catalog__item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+
+.fastener-catalog__item-title {
+  font-weight: 550;
+  font-size: 13px;
+  line-height: 13px;
+  margin-bottom: 10px;
+  letter-spacing: 0.035em;
+  color: #000000;
+}
+
+.fastener-catalog__item-p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.035em;
+  color: #6D6969;
+}
+
+.fastener-catalog__item.especially {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #F34743;
+}
+
+.fastener-catalog__item.especially div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+
+.fastener-catalog__item.especially .fastener-catalog__link {
+  font-weight: 550;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.035em;
+  color: #FFFFFF;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -926,6 +1067,10 @@ a {
 
   .nav__search {
     max-width: 526px;
+  }
+
+  .fastener-catalog__item {
+    width: calc(20% - 8px);
   }
 }
 
@@ -1074,6 +1219,10 @@ a {
   .footer__nav-row:nth-of-type(3) .footer__nav-link {
     text-align: right;
   }
+
+  .fastener-catalog__item {
+    width: calc(25% - 7.6px);
+  }
 }
 
 @media (max-width: 1200px) and (max-width: 576px) {
@@ -1107,6 +1256,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .fastener-catalog__item {
+    width: calc(33.333333% - 6.7px);
   }
 }
 
@@ -1142,7 +1295,15 @@ a {
     line-height: 16px;
   }
 
+  .footer {
+    margin-top: 50px;
+  }
+
   .footer__accordion {
+    width: calc(50% - 5px);
+  }
+
+  .fastener-catalog__item {
     width: calc(50% - 5px);
   }
 }
@@ -1208,5 +1369,17 @@ a {
 
   .footer__accordion {
     width: 100%;
+  }
+
+  .fastener-catalog__item {
+    height: 200px;
+  }
+
+  .fastener-catalog__item-img {
+    padding-bottom: 60px;
+  }
+
+  .fastener-catalog__item-img img {
+    height: 80px;
   }
 }
