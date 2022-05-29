@@ -1,0 +1,35 @@
+.info{
+    &__title{
+        font-size: 18px;
+        line-height: 114.8%;
+        margin-bottom: 25px;
+        letter-spacing: 0.035em;
+        color: #000000;
+        @include media(576){
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 114.8%;
+        }
+    }
+    &__p{
+        font-size: 14px;
+        line-height: 125%;
+        letter-spacing: 0.035em;
+        color: #272727;
+        margin-bottom: 25px;
+        @include media(576){
+            margin-bottom: 15px;
+        }
+    }
+    &__btn{
+        font-weight: 550;
+        font-size: 14px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 9px;
+        letter-spacing: 0.035em;
+        color: #272727;
+    }
+}
