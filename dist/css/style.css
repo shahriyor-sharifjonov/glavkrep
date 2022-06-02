@@ -994,7 +994,7 @@
 }
 
 .detail__body > .info .info__body {
-  padding: 50px 0 60px 0;
+  padding: 60px 0 0px 0;
 }
 
 .detail__sidebar {
@@ -1115,7 +1115,7 @@
 }
 
 .detail__content .info__body {
-  padding: 50px 0 60px 0;
+  padding-top: 60px;
 }
 
 .detail__intro {
@@ -1145,7 +1145,7 @@
 }
 
 .detail__intro-tags {
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }
 
 .detail__intro-warning {
@@ -1236,7 +1236,7 @@
   font-weight: 550;
 }
 
-.detail__list {
+.detail__list.mb {
   margin-bottom: 30px;
 }
 
@@ -1865,7 +1865,7 @@ a {
 }
 
 .product-item__content {
-  padding: 20px 10px 10px 10px;
+  padding: 19px 10px 15px 10px;
 }
 
 .product-item__title {
@@ -1925,9 +1925,9 @@ a {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1460px) {
   .container {
-    max-width: 1320px;
+    max-width: 1400px;
   }
 }
 
@@ -1969,7 +1969,7 @@ a {
   }
 
   .detail__intro-tags {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
 
   .detail__intro-warning {
@@ -2188,6 +2188,17 @@ a {
     max-width: calc(100% - 244px);
   }
 
+  .detail__intro-breadcrumbs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 10px;
+  }
+
   .products-title {
     margin-top: 60px;
   }
@@ -2312,6 +2323,10 @@ a {
     margin-bottom: 15px;
   }
 
+  .detail__list {
+    margin-bottom: 50px;
+  }
+
   .fastener-catalog__item {
     width: calc(33.333333% - 6.7px);
   }
@@ -2365,6 +2380,10 @@ a {
 
   .footer__accordion {
     width: calc(50% - 5px);
+  }
+
+  .detail__sidebar-info:last-of-type {
+    margin-left: 0;
   }
 
   .detail__intro {
@@ -2618,6 +2637,10 @@ a {
     margin-bottom: 15px;
   }
 
+  .detail__body > .info .info__body {
+    padding-top: 50px;
+  }
+
   .detail__sidebar-items {
     row-gap: 20px;
   }
@@ -2657,6 +2680,17 @@ a {
     margin-bottom: 20px;
   }
 
+  .breadcrumbs-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 15px;
+  }
+
   .products-title {
     margin-top: 50px;
   }
@@ -2671,6 +2705,10 @@ a {
 
   .fastener-catalog__item-img img {
     height: 80px;
+  }
+
+  .product-item__title {
+    margin-bottom: 5px;
   }
 }
 
