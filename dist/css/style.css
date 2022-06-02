@@ -419,14 +419,14 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  row-gap: 21px;
-  width: 214px;
+  row-gap: 20px;
+  width: 223px;
 }
 
 .nav__katalog-link {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 13px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.035em;
   color: #000000;
   -webkit-transition: 300ms ease-out;
@@ -597,7 +597,7 @@
 }
 
 .footer__link {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 125%;
   font-weight: 400;
   letter-spacing: 0.035em;
@@ -752,6 +752,17 @@
 
 .footer__nav-link span {
   font-weight: 550;
+}
+
+.footer__nav-soc-link:hover svg path {
+  fill: #F34743;
+}
+
+.footer__nav-soc-link svg path {
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  fill: black;
 }
 
 .footer__top.md .footer__top-body {
@@ -950,6 +961,18 @@
   color: #272727;
 }
 
+.info__btn svg {
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.info__btn.active svg {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .detail {
   padding-top: 5px;
 }
@@ -1010,8 +1033,8 @@
 
 .detail__sidebar-item-title {
   font-weight: 550;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   letter-spacing: 0.035em;
   margin-bottom: 12px;
   color: #000000;
@@ -1019,7 +1042,7 @@
 
 .detail__sidebar-item-p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 125%;
   letter-spacing: 0.035em;
   color: #272727;
@@ -1074,6 +1097,14 @@
   line-height: 16px;
   letter-spacing: 0.035em;
   color: #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.detail__sidebar-info-btn:hover {
+  background: #F24843;
+  color: #fff;
 }
 
 .detail__content {
@@ -1130,8 +1161,8 @@
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
-  font-size: 13px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 14px;
   letter-spacing: 0.035em;
   color: #000000;
   margin-bottom: 30px;
@@ -1277,11 +1308,11 @@
 }
 
 .detail__list-item_5 {
-  width: 68px;
+  width: 85px;
 }
 
 .detail__list-item_6 {
-  width: 130px;
+  width: 150px;
 }
 
 .detail__list-item-button {
@@ -1384,12 +1415,21 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 12px;
+  line-height: 12px;
   padding: 10px;
   letter-spacing: 0.035em;
   color: #000000;
-  width: 130px;
+  width: 150px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.detail__list-item-btn:hover {
+  background: #F24843;
+  border-color: #F24843;
+  color: #fff;
 }
 
 .detail__list-item-calc {
@@ -1418,6 +1458,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 500;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.detail__list-item-calc button:hover {
+  color: #ff0800;
 }
 
 .detail__list-item-calc input {
@@ -1434,8 +1481,8 @@
           justify-content: center;
   text-align: center;
   padding: 10px;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 14px;
   letter-spacing: 0.035em;
   color: #000000;
 }
@@ -1454,8 +1501,8 @@
 
 .detail__list-item-p {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 14px;
   text-align: center;
   letter-spacing: 0.035em;
   color: #000000;
@@ -1565,8 +1612,8 @@ a {
 
 .breadcrumbs__btn {
   font-weight: 550;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 14px;
   letter-spacing: 0.035em;
   color: #000000;
   display: -webkit-box;
@@ -1590,8 +1637,8 @@ a {
 .breadcrumbs__link,
 .breadcrumbs__p {
   font-weight: 550;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 14px;
   letter-spacing: 0.035em;
   color: #CACACA;
 }
@@ -1618,16 +1665,16 @@ a {
 
 .tags__title {
   font-weight: 550;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 14px;
   letter-spacing: 0.035em;
   color: #000000;
 }
 
 .tags__link {
   font-weight: 550;
-  font-size: 10px;
-  line-height: 10px;
+  font-size: 14px;
+  line-height: 14px;
   letter-spacing: 0.035em;
   color: #6D6969;
 }
@@ -1848,7 +1895,7 @@ a {
 
 .product-item__desc {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 125.5%;
   letter-spacing: 0.035em;
   color: #6D6969;
@@ -2054,6 +2101,11 @@ a {
 
   .nav__search {
     max-width: 100%;
+  }
+
+  .footer__link {
+    font-size: 13px;
+    line-height: 125%;
   }
 
   .footer__nav-body {

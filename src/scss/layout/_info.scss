@@ -31,5 +31,13 @@
         column-gap: 9px;
         letter-spacing: 0.035em;
         color: #272727;
+        svg{
+            transition: 300ms ease-out;
+        }
+        &.active{
+            svg{
+                transform: rotate(-180deg);
+            }
+        }
     }
 }

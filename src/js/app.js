@@ -67,3 +67,18 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function(){
+	$('.content_toggle').click(function(){
+		$('.content_block').slideToggle(300, function(){
+			if ($(this).is(':hidden')) {
+        $('.content_toggle').removeClass('active');
+				$('.content_toggle span').html('Читать далее');
+			} else {
+        $('.content_toggle').addClass('active');
+				$('.content_toggle span').html('Скрыть текст');
+			}							
+		});
+		return false;
+	});
+});

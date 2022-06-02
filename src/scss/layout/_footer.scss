@@ -43,12 +43,16 @@
         margin-bottom: 14px;
     }
     &__link{
-        font-size: 13px;
+        font-size: 14px;
         line-height: 125%;
         font-weight: 400;
         letter-spacing: 0.035em;
         color: #272727;
         transition: 300ms ease-out;
+        @include media(1200){
+            font-size: 13px;
+            line-height: 125%;
+        }
         &:hover{
             color: #F34743;
         }
@@ -189,6 +193,21 @@
             }
             span{
                 font-weight: 550;
+            }
+        }
+        &-soc{
+            &-link{
+                &:hover{
+                    svg path{
+                        fill: #F34743;
+                    }
+                }
+                svg{
+                    path{
+                        transition: 300ms ease-out;
+                        fill: black;
+                    }
+                }
             }
         }
     }
